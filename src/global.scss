@@ -1,0 +1,96 @@
+// @import "./mixins";
+// *,
+// *::before,
+// *::after {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+//   font-family: Arial, Helvetica, sans-serif;
+// }
+// :root {
+//   --blue: #4864ff;
+//   --bg-color: #fff;
+//   --text-color1: #000;
+//   --text-color: #555;
+// }
+// a {
+//   text-decoration: none;
+// }
+// ul {
+//   list-style: none;
+// }
+// .wrapper {
+//   width: 100%;
+//   pad: 2rem;
+//   min-height: calc(100vh - 60px);
+// }
+// .content {
+//     @include d-flex(column,flex-start,center);
+//     gap: 2rem;
+// }
+// .app{
+
+
+//     color: var(--text-color);
+//     background-color: var(--bg-color);
+//     transition: all 0.3s ease-in-out;
+
+//     &.dark{
+
+//         --blue: #4864ff;
+//       --bg-color: #000000;
+//       --text-color1: #fffcfc;
+//       --text-color: #999;
+//     }
+// }
+
+@import "./mixins";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --blue: hsl(231, 93%, 29%);
+  --bg-color: #fff;
+  --text-color1: #000;
+  --text-color: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 2rem;
+  min-height: calc(100vh - 60px);
+}
+
+.content {
+  @include d-flex(column, flex-start, center);
+  gap: 2rem;
+}
+
+.app {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: all 0.3s ease-in-out;
+
+  &.dark {
+    --blue: #4864ff;
+    --bg-color: #5e5b5b;
+    --text-color1: #fffcfc;
+    --text-color: #999;
+  }
+}
+
